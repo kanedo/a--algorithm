@@ -25,5 +25,7 @@ public:
 	Node* getDstNode();
 	Node* getOrgNode();
 	float getCost();
+	string getLabel();
+	void print();
 };
 #endif /* defined(__a_star_search__Edge__) */

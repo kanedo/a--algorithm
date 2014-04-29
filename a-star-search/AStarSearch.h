@@ -15,6 +15,7 @@
 #include <map>
 #include "Node.h"
 #include "Edge.h"
+#include "helper.h"
 
 using namespace std;
 
@@ -26,6 +27,7 @@ protected:
 	set<Node*, NodeComparator> *nodes;
 	
 	map<int, float>weight;
+	vector<Edge>edges;
 	
 	void expandNode(Node *currentNode);
 	
@@ -40,6 +42,7 @@ public:
 	~AStarSearch();
 	void addNodes(set<Node*, NodeComparator> *nodes);
 	bool search(int start, int end);
+	void printBestPath(int start, int end);
 	
 };
 

@@ -24,8 +24,13 @@ Edge::Edge(Node *firstNode, Node *secNode, float inCost)
 	this->label = "edge";
 }
 
+
 Edge::~Edge(){
 	
+}
+
+string Edge::getLabel(){
+	return this->label;
 }
 
 Node* Edge::getDstNode()

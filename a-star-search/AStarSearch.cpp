@@ -53,6 +53,20 @@ bool AStarSearch::search(int start, int end){
 	return false;
 }
 
+void AStarSearch::printBestPath(int start, int end){
+	int val = end;
+	vector<Edge>*final_path = new vector<Edge>();
+	for (size_t i = this->edges.size(); i > 0; i--) {
+		if(this->edges[i-1].getDstNode()->getValue() == val){
+			final_path->push_back(this->edges[i-1]);
+			val = this->edges[i-1].getOrgNode()->getValue();
+		}
+	}
+	
+	print_edges(*final_path);
+	print_edges_word(*final_path);
+}
+
 
 void AStarSearch::expandNode(Node *currentNode){
 	vector<Edge> successors = currentNode->getEdges();
@@ -75,6 +89,7 @@ void AStarSearch::expandNode(Node *currentNode){
 		float f = tentative_g + this->h((*successor).getDstNode());
 		successorNode->setPriority(f);
 		if (this->openset->find((*successor).getDstNode()) == this->openset->end()) {
+			this->edges.push_back(*successor);
 			this->openlist->push((*successor).getDstNode());
 			this->openset->insert((*successor).getDstNode());
 		}
@@ -92,14 +107,12 @@ Node* AStarSearch::getNodeByValue(int val){
 
 float AStarSearch::g(Node *currentNode){
 	float val = this->weight[currentNode->getValue()];
-	cout << "return g(" << currentNode->getValue() << ") = " << val << endl;
 	return val;
 }
 float AStarSearch::h(Node *currentNode){
 	return 0;
 }
 void AStarSearch::updateG(Node *currentNode, float val){
-	cout << "g(" << currentNode->getValue() << ") = " << val << endl;
 	this->weight[currentNode->getValue()] = val;
 }
 float AStarSearch::costs(Node *a, Node *b){

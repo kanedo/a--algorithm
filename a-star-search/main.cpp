@@ -46,10 +46,8 @@ int main(int argc, const char * argv[])
 	
 	bool res = search->search(0, 3);
 	if(res){
-		cout << "YAY ";
-		d->print();
+		search->printBestPath(0, 3);
 	}
-	std::cout << "Hello, World!\n";
     return 0;
 }
 

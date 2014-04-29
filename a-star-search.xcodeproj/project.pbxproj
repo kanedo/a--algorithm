@@ -12,6 +12,7 @@
 		1024F62E190F78E3009E4E6A /* AStarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F62C190F78E3009E4E6A /* AStarSearch.cpp */; };
 		1024F631190F7D01009E4E6A /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F62F190F7D01009E4E6A /* Node.cpp */; };
 		1024F634190F9B1F009E4E6A /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F632190F9B1F009E4E6A /* Edge.cpp */; };
+		102599881910018900A6DA9D /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 102599861910018900A6DA9D /* helper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		1024F630190F7D01009E4E6A /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		1024F632190F9B1F009E4E6A /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
 		1024F633190F9B1F009E4E6A /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+		102599861910018900A6DA9D /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helper.cpp; sourceTree = "<group>"; };
+		102599871910018900A6DA9D /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				1024F630190F7D01009E4E6A /* Node.h */,
 				1024F632190F9B1F009E4E6A /* Edge.cpp */,
 				1024F633190F9B1F009E4E6A /* Edge.h */,
+				102599861910018900A6DA9D /* helper.cpp */,
+				102599871910018900A6DA9D /* helper.h */,
 			);
 			path = "a-star-search";
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			files = (
 				1024F631190F7D01009E4E6A /* Node.cpp in Sources */,
 				1024F624190F78CF009E4E6A /* main.cpp in Sources */,
+				102599881910018900A6DA9D /* helper.cpp in Sources */,
 				1024F634190F9B1F009E4E6A /* Edge.cpp in Sources */,
 				1024F62E190F78E3009E4E6A /* AStarSearch.cpp in Sources */,
 			);
@@ -245,6 +251,7 @@
 				1024F62B190F78CF009E4E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
