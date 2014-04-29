@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1024F624190F78CF009E4E6A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F623190F78CF009E4E6A /* main.cpp */; };
 		1024F626190F78CF009E4E6A /* a_star_search.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1024F625190F78CF009E4E6A /* a_star_search.1 */; };
+		1024F62E190F78E3009E4E6A /* AStarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F62C190F78E3009E4E6A /* AStarSearch.cpp */; };
+		1024F631190F7D01009E4E6A /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F62F190F7D01009E4E6A /* Node.cpp */; };
+		1024F634190F9B1F009E4E6A /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1024F632190F9B1F009E4E6A /* Edge.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		1024F620190F78CF009E4E6A /* a-star-search */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "a-star-search"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1024F623190F78CF009E4E6A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1024F625190F78CF009E4E6A /* a_star_search.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = a_star_search.1; sourceTree = "<group>"; };
+		1024F62C190F78E3009E4E6A /* AStarSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AStarSearch.cpp; sourceTree = "<group>"; };
+		1024F62D190F78E3009E4E6A /* AStarSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStarSearch.h; sourceTree = "<group>"; };
+		1024F62F190F7D01009E4E6A /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		1024F630190F7D01009E4E6A /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1024F632190F9B1F009E4E6A /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		1024F633190F9B1F009E4E6A /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 			children = (
 				1024F623190F78CF009E4E6A /* main.cpp */,
 				1024F625190F78CF009E4E6A /* a_star_search.1 */,
+				1024F62C190F78E3009E4E6A /* AStarSearch.cpp */,
+				1024F62D190F78E3009E4E6A /* AStarSearch.h */,
+				1024F62F190F7D01009E4E6A /* Node.cpp */,
+				1024F630190F7D01009E4E6A /* Node.h */,
+				1024F632190F9B1F009E4E6A /* Edge.cpp */,
+				1024F633190F9B1F009E4E6A /* Edge.h */,
 			);
 			path = "a-star-search";
 			sourceTree = "<group>";
@@ -117,7 +132,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1024F631190F7D01009E4E6A /* Node.cpp in Sources */,
 				1024F624190F78CF009E4E6A /* main.cpp in Sources */,
+				1024F634190F9B1F009E4E6A /* Edge.cpp in Sources */,
+				1024F62E190F78E3009E4E6A /* AStarSearch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
